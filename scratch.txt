@@ -1,3 +1,10 @@
+TODO:
+-- HTML --
+-- CSS --
+  - Add color schemes with dark and light mode
+-- JS --
+  - Change random ID generation in JS to a numeralized date-time
+
 /* color variables */
 :root {
     --gradient_spot1_color: #db0072; /* rose */
