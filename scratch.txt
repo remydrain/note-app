@@ -1,0 +1,56 @@
+/* color variables */
+:root {
+    --gradient_spot1_color: #db0072; /* rose */
+    --gradient_spot1_w: 50vw;
+    --gradient_spot1_h: 100vh;
+    --gradient_spot1_x: -10%;
+    --gradient_spot1_y: 80%;
+
+    --gradient_spot2_color: #ffe53e; /* yellow */
+    --gradient_spot2_w: 50vw;
+    --gradient_spot2_h: 100vh;
+    --gradient_spot2_x: 25%;
+    --gradient_spot2_y: 60%;
+
+    --gradient_spot3_color: #00ffe4; /* teal */
+    --gradient_spot3_w: 50vw;
+    --gradient_spot3_h: 100vh;
+    --gradient_spot3_x: 55%;
+    --gradient_spot3_y: 40%;
+
+    --gradient_spot4_color: #d150ff; /* purple */
+    --gradient_spot4_w: 50vw;
+    --gradient_spot4_h: 100vh;
+    --gradient_spot4_x: 90%;
+    --gradient_spot4_y: 20%;
+}
+
+/* background variables */
+
+.fancy-gradient {
+    background-color: var(--gradient_bg_color);
+    background-image: radial-gradient(
+        var(--gradient_spot1_w) var(--gradient_spot1_h)
+        at left var(--gradient_spot1_x) top var(--gradient_spot1_y),
+        var(--gradient_spot1_color),
+        transparent
+      ),
+      radial-gradient(
+        var(--gradient_spot2_w) var(--gradient_spot2_h)
+        at left var(--gradient_spot2_x) top var(--gradient_spot2_y),
+        var(--gradient_spot2_color),
+        transparent
+      ),
+      radial-gradient(
+        var(--gradient_spot3_w) var(--gradient_spot3_h)
+        at left var(--gradient_spot3_x) top var(--gradient_spot3_y),
+        var(--gradient_spot3_color),
+        transparent
+      ),
+      radial-gradient(
+        var(--gradient_spot4_w) var(--gradient_spot4_h)
+        at left var(--gradient_spot4_x) top var(--gradient_spot4_y),
+        var(--gradient_spot4_color),
+        transparent
+      );
+  }
